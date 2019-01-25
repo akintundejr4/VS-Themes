@@ -1,2 +1,2 @@
 # VS-Themes
-Visual Studio themes that I like 
+Visual Studio and Typora themes that I like 
