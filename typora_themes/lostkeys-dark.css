@@ -21,4 +21,8 @@
 
 #write {
     cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
+    max-width: 900px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
 }

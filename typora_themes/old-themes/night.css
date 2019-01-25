@@ -41,10 +41,8 @@ body {
 }
 
 #write {
-    max-width: 914px;
-    margin: 0 auto;
-    padding: 30px;
-    padding-bottom: 100px;
+    max-width: 1000px;
+    padding-top: 20px;
 }
 
 html,
@@ -55,7 +53,6 @@ select,
 textarea,
 div.code-tooltip-content {
     color: #b8bfc6;
-    border-color: transparent;
 }
 
 div.code-tooltip,
@@ -537,6 +534,11 @@ td {
     top: 2px;
 }
 
+div.md-toc {
+    font-size: 20px;
+    line-height: 1.6em;
+    page-break-after: always;
+}
 .md-toc-item {
     color: #A8C2DC;
 }
@@ -710,6 +712,12 @@ footer {
 #recent-file-panel-action-btn {
     background: inherit;
     border: 1px grey solid;
+}
+
+.megamenu-menu-panel .btn:hover, 
+.megamenu-menu-panel .btn:focus, 
+.megamenu-menu-panel .btn.focus {
+    color: white;
 }
 
 .megamenu-menu-panel .dropdown-menu > li > a {
@@ -902,6 +910,10 @@ footer {
 #ty-tooltip {
     background-color: black;
     color: #eee;
+}
+
+#write {
+    cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
 }
 
 .md-task-list-item>input {

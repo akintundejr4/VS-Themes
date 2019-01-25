@@ -112,7 +112,7 @@ body {
 }
 
 #write {
-	max-width: 914px;
+	max-width: 1000px;
 	color: #333;
 }
 
@@ -224,7 +224,7 @@ h6,
 @media screen and (min-width: 48em) {
 	.h1,
 	h1 {
-		font-size: 3.250rem;
+		font-size: 3.0rem;
 	}
 	.h2,
 	h2 {
@@ -420,6 +420,12 @@ a {
 
 .md-toc:focus .md-toc-content{
 	margin-top: 19px;
+}
+
+div.md-toc {
+    font-size: 20px;
+	line-height: 1.6em;
+	page-break-after: always;
 }
 
 #typora-sidebar {

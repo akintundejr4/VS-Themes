@@ -1,3 +1,7 @@
+:root {
+	--rawblock-edit-panel-bd: #e5e5e5;
+}
+
 /* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
 
 @include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
@@ -37,11 +41,9 @@
 	--active-file-text-color: white;
 	--bg-color: #f3f2ee;
 	--text-color: #1f0909;
-	--control-text-color: #444;
-	--rawblock-edit-panel-bd: #e5e5e5;
 
 	--select-text-bg-color: rgba(32, 43, 51, 0.63);
-  --select-text-font-color: white;
+    --select-text-font-color: white;
 }
 
 pre {
@@ -75,10 +77,7 @@ html, body {
 }*/
 
 #write {
-	max-width: 900px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
+	max-width: 1000px;
 }
 
 ol li {
@@ -227,18 +226,12 @@ td {
 code,
 .md-fences {
 	background-color: #dadada;
+	padding-left: 1ch;
+	padding-right: 1ch;
 }
-
-code {
-	padding-left: 2px;
-	padding-right: 2px;
-}
-
 .md-fences {
 	margin-left: 2em;
 	margin-bottom: 3em;
-	padding-left: 1ch;
-	padding-right: 1ch;
 }
 
 pre,
@@ -257,7 +250,7 @@ h1 {
 
 p + ul,
 p + ol{
-	margin-top: .5em;
+	margin-top: -1em;
 }
 
 h3 + ul,
@@ -277,12 +270,16 @@ li > ol {
 	margin-bottom: 0;
 }
 
-li ol>li {
+li li {
 	list-style-type: lower-alpha;
 }
 
-li li ol>li{
+li li li{
 	list-style-type: lower-roman;
+}
+
+li > blockquote {
+	margin-bottom: 0;
 }
 
 h2,
@@ -302,12 +299,6 @@ blockquote {
 	border-color: #bababa;
 	color: #656565;
 }
-
-blockquote ul,
-blockquote ol {
-	margin-left:0;
-}
-
 .ty-table-edit {
 	background-color: transparent;
 }
@@ -400,7 +391,12 @@ hr {
 }
 #write div.md-toc-tooltip {
 	background-color: #f3f2ee;
-	
+}
+
+div.md-toc {
+    font-size: 20px;
+	line-height: 1.6em;
+	page-break-after: always;
 }
 
 #typora-sidebar {
@@ -575,10 +571,4 @@ input {
 
 .dropdown-menu .divider {
 	border-color: #e5e5e5;
-}
-
-/* https://github.com/typora/typora-issues/issues/2046 */
-.os-windows-7 strong,
-.os-windows-7 strong  {
-	font-weight: 760;
 }

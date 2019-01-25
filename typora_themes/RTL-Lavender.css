@@ -1,9 +1,9 @@
 @import "Lavender/fonts.css";
 @import "Lavender/webfont.css";
 
-import url(https://fonts.googleapis.com/css?family=Open%20Sans);
-import url(https://fonts.googleapis.com/css?family=Titillium+Web);
-import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Open%20Sans);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 
 :root {
     --code-block-bg-color: inherit;

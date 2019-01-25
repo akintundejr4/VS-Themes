@@ -111,10 +111,11 @@ content {
 
 #write {
 	/* size of writing area: */
-  padding-left: var(--document-padding-x);
-  padding-right: var(--document-padding-x);
-  max-width: var(--main-content-max-width);
   box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 100px;
 }
 
 /**
