@@ -13,7 +13,7 @@ body {
 	text-align: justify;
 }
 #write {
-	max-width: 1000px;
+	max-width: 960px;
 	margin: 0 auto;
 	margin-bottom: 2em;
 	line-height: 1.53;
@@ -219,13 +219,6 @@ table tbody+tbody {
 .md-toc-content {
 	padding-bottom: 20px;
 }
-
-div.md-toc {
-    font-size: 20px;
-    line-height: 1.6em;
-    page-break-after: always;
-}
-
 
 .outline-expander:before {
 	color: inherit;

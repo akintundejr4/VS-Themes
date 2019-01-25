@@ -75,10 +75,7 @@ html, body {
 }*/
 
 #write {
-	max-width: 900px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
+	max-width: 40em;
 }
 
 ol li {
@@ -400,7 +397,6 @@ hr {
 }
 #write div.md-toc-tooltip {
 	background-color: #f3f2ee;
-	
 }
 
 #typora-sidebar {

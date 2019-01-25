@@ -9,7 +9,6 @@
 }
 
 @include-when-export url(https://raw.githubusercontent.com/slashfoo/lmweb/master/style/latinmodern-mono-light.css);
-
 html {
     font-size: 12pt;
 }
@@ -18,43 +17,35 @@ html {
     font-family: 'STIX2Text';
     font-style: normal;
     font-weight: normal;
-    src: local('STIX2Text Regular'),
-        url('./academic/STIX2Text-Regular.woff') format('woff'),
-        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff')
+    src: local('STIX2Text Regular'), url('./academic/STIX2Text-Regular.woff') format('woff'), url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff')
 }
 
 @font-face {
     font-family: 'STIX2Text';
     font-style: italic;
     font-weight: normal;
-    src: local('STIX2Text Italic'),
-        url('./academic/STIX2Text-Italic.woff') format('woff'),
-        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff')
+    src: local('STIX2Text Italic'), url('./academic/STIX2Text-Italic.woff') format('woff'), url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff')
 }
 
 @font-face {
     font-family: 'STIX2Text';
     font-style: normal;
     font-weight: bold;
-    src: local('STIX2Text Bold'),
-        url('./academic/STIX2Text-Bold.woff') format('woff'),
-        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff')
+    src: local('STIX2Text Bold'), url('./academic/STIX2Text-Bold.woff') format('woff'), url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff')
 }
 
 @font-face {
     font-family: 'STIX2Text';
     font-style: italic;
     font-weight: bold;
-    src: local('STIX2Text Bold Italic'),
-    url('./academic/STIX2Text-BoldItalic.woff') format('woff'),
-    url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-BoldItalic.woff') format('woff')
+    src: local('STIX2Text Bold Italic'), url('./academic/STIX2Text-BoldItalic.woff') format('woff'), url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-BoldItalic.woff') format('woff')
 }
 
 @font-face {
     font-family: 'STIX2Math';
     font-style: italic;
     font-weight: bold;
-    src: local('STIX2Math'),url('./academic/STIX2Math.woff') format('woff')
+    src: local('STIX2Math'), url('./academic/STIX2Math.woff') format('woff')
 }
 
 @font-face {
@@ -63,18 +54,21 @@ html {
     font-weight: normal;
     font-style: italic;
 }
+
 @font-face {
     font-family: 'Latin Modern Mono Light';
     src: url('./academic/lmmonolt10-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Latin Modern Mono Light';
     src: url('./academic/lmmonolt10-boldoblique-webfont.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
+
 @font-face {
     font-family: 'Latin Modern Mono Light';
     src: url('./academic/lmmonolt10-bold-webfont.woff') format('woff');
@@ -82,8 +76,37 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Computer Modern";
+    src: url('./academic/cmunss.otf');
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('./academic/cmunsx.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('./academic/cmunsi.otf');
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('./academic/cmunbxo.otf');
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: 'My Modern';
+    src: URL('./academic/cmunvt.ttf') format('truetype');
+  }
+
 #write {
-    font-family: "STIX2Text", "Times New Roman", "serif";
+    font-family: "STIX2Text", "My Modern", "Latin Modern Mono Light", "Computer Modern", "Times New Roman", serif, serif, serif, serif;
     line-height: 1.5em;
     max-width: 1300px;
     padding: 10%;
@@ -114,11 +137,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
 }
 
-h1  {
+h1 {
     font-size: 2.4em;
 }
 
-#write h1  {
+#write h1 {
     text-align: center;
 }
 
@@ -134,7 +157,7 @@ h4 {
     font-size: 1.2em;
 }
 
-h5  {
+h5 {
     font-size: 1.1em;
 }
 
@@ -169,9 +192,7 @@ pre, code {
     color: #333;
 }
 
-*.in-text-selection,
-::selection,
-.CodeMirror-selected {
+*.in-text-selection, ::selection, .CodeMirror-selected {
     background: var(--search-select-bg-color);
     color: var(--search-select-text-color) !important;
     text-shadow: none;
@@ -184,9 +205,9 @@ a.md-toc-inner {
 div.md-toc {
     font-size: 20px;
     line-height: 1.6em;
-    page-break-after: always; 
-  }
-  
+    page-break-after: always;
+}
+
 .cm-s-typora-default .cm-link {
     color: #a00;
     text-decoration: underline;
@@ -201,8 +222,7 @@ div.md-toc {
     max-width: 1000px;
 }
 
-.md-def-name:before,
-.md-def-name:after {
+.md-def-name:before, .md-def-name:after {
     color: #2d2d2d;
 }
 
@@ -251,12 +271,11 @@ pre.md-meta-block {
     background-color: inherit;
 }
 
-.task-list-item input:checked:before,
-.task-list-item input[checked]:before{
+.task-list-item input:checked:before, .task-list-item input[checked]:before {
     color: inherit;
 }
 
-.md-task-list-item > input {
+.md-task-list-item>input {
     top: auto;
     margin-left: -1.1em;
     font-size: 1.3em;
@@ -275,8 +294,7 @@ pre.md-meta-block {
     background-color: inherit;
 }
 
-.md-task-list-item input:checked:before,
-.md-task-list-item input[checked]:before{
+.md-task-list-item input:checked:before, .md-task-list-item input[checked]:before {
     color: inherit;
     content: '\2611';
 }
@@ -291,16 +309,15 @@ blockquote {
     position: relative;
     color: #383838;
     border-left: 2px solid;
-    
 }
 
-#write > blockquote {
+#write>blockquote {
     padding: 0.25em 30px;
     margin-left: -32px;
     width: calc(100% + 32px);
 }
 
-#write >  .md-fences-with-lineno {
+#write>.md-fences-with-lineno {
     margin-left: -33px;
     color: black;
 }
