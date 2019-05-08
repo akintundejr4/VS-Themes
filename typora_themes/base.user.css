@@ -1,0 +1,4 @@
+#typora-source .CodeMirror-lines {
+    max-width: 960px; 
+    /* Set this to Auto or delete the whole thing to revert back to default */ 
+  }

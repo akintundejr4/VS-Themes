@@ -44,7 +44,7 @@ body {
 }
 
 #write {
-    max-width: 960px;
+    max-width: 860px;
   	margin: 0 auto;
   	padding: 30px;
     padding-bottom: 100px;
@@ -76,7 +76,6 @@ h3:hover a.anchor,
 h4:hover a.anchor,
 h5:hover a.anchor,
 h6:hover a.anchor {
-    /*background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;*/
     text-decoration: none;
 }
 h1 tt,
@@ -238,7 +237,6 @@ code {
 .md-fences {
     margin-bottom: 15px;
     margin-top: 15px;
-    padding: 0.2em 1em;
     padding-top: 8px;
     padding-bottom: 6px;
 }
