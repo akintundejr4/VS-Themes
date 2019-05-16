@@ -363,7 +363,6 @@ h3 a {
 }
 
 h3 a:before {
-    content: '#';
     color: #42b983;
     position: absolute;;
     left: -0.7em;

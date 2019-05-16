@@ -180,17 +180,6 @@ h3::before {
   display: inline-block;
 }
 
-h1::before {
-  content: '#1';
-}
-
-h2::before {
-  content: '#2';
-}
-
-h3::before {
-  content: '#3';
-}
 
 /* table */
 table {
@@ -417,31 +406,7 @@ sup {
  * Source Code Mode
  * see http:/*support.typora.io/Code-Block-Styles
  */
-#typora-source {
-	.cm-header {
 
-	}
-
-	.cm-strong {
-
-	}
-
-	.cm-em {
-
-	}
-
-	.cm-link {
-
-	}
-
-	.cm-string {
-
-	}
-
-	.cm-comment {
-
-	}
-}
 
 /**
  * Control UI (optional)

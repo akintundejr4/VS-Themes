@@ -107,7 +107,7 @@ body {
 	/* size of writing area: */
   padding-left: var(--document-padding-x);
   padding-right: var(--document-padding-x);
-  max-width: var(--main-content-max-width);
+  max-width: 960px; 
   box-sizing: border-box;
 }
 
@@ -180,7 +180,7 @@ h3::before {
   display: inline-block;
 }
 
-h1::before {
+/* h1::before {
   content: '#';
 }
 
@@ -190,7 +190,7 @@ h2::before {
 
 h3::before {
   content: '###';
-}
+} */
 
 h1 tt,
 h1 code {

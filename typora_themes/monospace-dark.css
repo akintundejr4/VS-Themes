@@ -86,24 +86,7 @@ h1,
 [mdlike='h1'] {
   font-size: 2rem;
 }
-h1:before {
-  content: "# ";
-}
-h2,
-[mdlike='h2'] {
-  font-size: 1.6rem;
-}
-h2:before {
-  content: "## ";
-}
-h3,
-[mdlike='h3'] {
-  font-size: 1.3rem;
-}
-h3:before,
-h3.md-focus:before {
-  content: "### ";
-}
+
 h4,
 h5,
 h6,
@@ -116,26 +99,17 @@ h4,
 [mdlike='h4'] {
   font-size: 1.2rem;
 }
-h4:before,
-h4.md-focus:before {
-  content: "#### ";
-}
+
 h5,
 [mdlike='h5'] {
   font-size: 1.1rem;
 }
-h5:before,
-h5.md-focus:before {
-  content: "##### ";
-}
+
 h6,
 [mdlike='h6'] {
   font-size: 1rem;
 }
-h6:before,
-h6.md-focus:before {
-  content: "####### ";
-}
+
 /** override the default style for focused headings */
 h3.md-focus:before,
 h4.md-focus:before,
