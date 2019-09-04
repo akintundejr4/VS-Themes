@@ -44,7 +44,7 @@ body {
 }
 
 #write {
-    max-width: 860px;
+    max-width: 960px;
   	margin: 0 auto;
   	padding: 30px;
     padding-bottom: 100px;
@@ -364,4 +364,13 @@ header, .context-menu, .megamenu-content, footer{
 
 .dropdown-menu .divider {
     border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
 }
