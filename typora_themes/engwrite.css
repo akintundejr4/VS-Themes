@@ -17,7 +17,7 @@ body {
   color: #333;
   background-color: #FCF5ED;
   padding: 20px;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -57,7 +57,7 @@ div.md-toc {
 }
 
 #write { 
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 30px;
   padding-bottom: 100px;
