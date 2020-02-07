@@ -182,6 +182,9 @@ pre, code {
 
 .md-fences {
     border: 1px solid;
+    color: black; 
+    font-weight: normal; 
+    background-color: #f8f8f850;
 }
 
 .md-fences.md-fences-with-lineno {
